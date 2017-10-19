@@ -1,0 +1,10 @@
+applications:
+- name: software 
+  memory: 128M
+  disk_quota: 256M
+  buildpack: ruby_buildpack
+  env:
+    RAILS_ENV: production
+    RACK_ENV: production
+  services:
+  - tt-software-db
